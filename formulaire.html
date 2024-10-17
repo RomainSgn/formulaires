@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logoCCICher.png" alt="Logo CCI du Cher">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="traitement.php" method="post" enctype="multipart/form-data">
+            <div class="civilite">
+                <label for="civilité">Homme</label>
+                <input type="radio" name="civilité" value="homme">
+                <label for="civilité">Femme</label>
+                <input type="radio" name="civilité" value="femme">
+                <label for="civilité">Autre</label>
+                <input type="radio" name="civilité" value="autre">
+            </div>
+
+            <div class="nomPrenom">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" placeholder="Nom" required>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" placeholder="Prénom" required>
+            </div>
+
+            <div class="mail">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email" required>
+            </div>
+
+            <div class="motDePasse">
+                <label for="motdepasse">Mot de passe</label>
+                <input type="password" name="motdepasse" placeholder="mot de passe" required>
+                <label for="motdepasse2">Répétez mot de passe</label>
+                <input type="password" name="motdepasse2" placeholder="Répétez mot de passe" required>
+            </div>
+
+            <div class="age">
+                <label for="age">Age</label>
+                <input type="number" name="age" min="0" max="100" required>
+            </div>
+
+            <div class="photoProfil">
+                <label for="photo">Photo de profil</label>
+                <input type="file" name="photo" accept=".gif,.jpeg,.jpg,.png" required>
+            </div>
+
+            <div class="description">
+                <label for="description">Description :</label>
+                <textarea name="description" placeholder="décrivez vous" required></textarea>
+            </div>
+
+            <div class="pays">
+                <label for="pays">Pays</label>
+                <select name="pays">
+                    <option value="france">France</option>
+                    <option value="italie">Italie</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="royaumes-unis">Royaumes-Unis</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="allemagne">Allemagne</option>
+                    <option value="pays-bas">Pays-Bas</option>
+                    <option value="suisse">Suisse</option>
+                    <option value="luxembourg">Luxembourg</option>
+                </select>
+            </div>
+
+            <div class="passion">
+                <label for="passion">Passions :</label>
+                <input type="checkbox" name="passion" id="jeux-vidéos" value="jeux-vidéos">
+                <label for="jeux-vidéos">Jeux-vidéos</label>
+                <input type="checkbox" name="passion" id="sports-mécaniques" value="sports-mécaniques">
+                <label for="sports-mécaniques">Sports mécaniques</label>
+                <input type="checkbox" name="passion" id="voyages" value="voyages">
+                <label for="voyages">Voyages</label>
+                <input type="checkbox" name="passion" id="ski" value="ski">
+                <label for="ski">Ski</label>
+            </div>
+
+            <input type="submit" value="Soummettre">
+        </form>
+    </main>
+
+    <footer>
+        <img src="assets/img/logoCCICher.png" alt="Logo CCI du Cher">
+        <p>SEIGNEURIN Romain</p>
+    </footer>
+</body>
+</html>

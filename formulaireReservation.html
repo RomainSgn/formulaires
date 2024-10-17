@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire réservation</title>
+</head>
+<body>
+    <main>
+        <form action="traitement.php" method="post" enctype="multipart/form-data">
+
+            <label for="lastName">Nom</label>
+            <input type="text" name="lastName" placeholder="Nom" required>
+            <label for="firstName">Prénom</label>
+            <input type="text" name="firstName" placeholder="Prénom" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" required>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" min="2024-10-17" required>
+            <label for="heure">Heure</label>
+            <input type="time"name="heure" required>
+
+            <label for="participants">Nombre de participants :</label>
+            <select name="participants">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="commentaires">commentaires :</label>
+            <textarea name="commentaires" placeholder="commentaires"></textarea>
+
+            <button for="submit">Soummettre</button>
+        </form>
+    </main>
+</body>
+</html>
