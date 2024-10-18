@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire devis</title>
+</head>
+
+<body>
+    
+    <!--Formulaire-->
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!--Infos personnelles-->
+
+        <fieldset class="infoPerso">
+
+            <legend>Informations personelles :</legend>
+
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" placeholder="Nom" required>
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+            <label for="tel">Téléphone :</label>
+            <input type="tel" name="tel" id="tel" pattern="[0]{1}[6-7]{1}[0-9]{8}" placeholder="Téléphone" required>
+            <br>
+
+            <label for="numRue">Numero de rue :</label>
+            <input type="number" name="numRue" id="numRue" required>
+            <label for="rue">Rue :</label>
+            <input type="text" name="rue" id="rue" placeholder="Rue" required>
+            <label for="codePostal">Code postal :</label>
+            <input type="number" name="codePostal" id="codePostal" placeholder="Code postal" required>
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville" placeholder="Ville" required>    
+        </fieldset>
+
+        <!--Fin info personnelles-->
+
+        <!--Autres infos-->
+
+        <fieldset class="autreInfo">
+            <legend>Sujet de la demande :</legend>
+            <input type="checkbox" name="sujetDemande[]" id="devWeb" value="devWeb">
+            <label for="devWeb">Développement web</label>
+            <input type="checkbox" name="sujetDemande[]" id="graphisme" value="graphisme">
+            <label for="graphisme">Graphisme</label>
+            <input type="checkbox" name="sujetDemande[]" id="maintenance" value="maintenance">
+            <label for="maintenance">Maintenance</label>
+            <br>
+
+            <label for="description">Description de la demande :</label>
+            <textarea name="description" id="description" placeholder="Decrivez votre demande"></textarea>
+            <br>
+            
+            <label for="budget">Votre budget :</label>
+            <input type="number" name="budget" id="budget" min="500" value="500" step="100" required>
+        </fieldset>
+
+        <!--Fin autres infos-->
+
+        <!--Bouttons-->
+
+        <button type="reset">Supprimer</button>
+        <button type="submit">Valider</button>
+
+        <!--Fin autres infos-->
+
+    </form>
+
+    <!--Fin formulaire-->
+
+</body>
+</html>

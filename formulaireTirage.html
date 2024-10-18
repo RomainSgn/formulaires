@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire tirage</title>
+</head>
+<body>
+
+    <!--Formulaire aprenants-->
+
+    <form action="tirage.php" method="post" enctype="multipart/form-data">
+
+        <fieldset class="apprenants">
+            <legend>Apprenants :</legend>
+
+            <input type="checkbox" name="apprenant[]" id="romain" value="romain">
+            <label for="romain">Romain</label>
+            <input type="checkbox" name="apprenant[]" id="hugo" value="hugo">
+            <label for="hugo">Hugo</label>
+            <input type="checkbox" name="apprenant[]" id="stephane" value="stephane">
+            <label for="stephane">Stéphane</label>
+            <input type="checkbox" name="apprenant[]" id="jimmy" value="jimmy">
+            <label for="jimmy">Jimmy</label>
+            <input type="checkbox" name="apprenant[]" id="tristan" value="tristan">
+            <label for="tristan">Tristan</label>
+            <input type="checkbox" name="apprenant[]" id="imran" value="imran">
+            <label for="imran">Imran</label>
+            <input type="checkbox" name="apprenant[]" id="tanguy" value="tanguy">
+            <label for="tanguy">Tanguy</label>
+            <input type="checkbox" name="apprenant[]" id="illan" value="illan">
+            <label for="illan">Illan</label>
+            <input type="checkbox" name="apprenant[]" id="imane" value="imane">
+            <label for="imane">Imane</label>
+            <input type="checkbox" name="apprenant[]" id="nicolas" value="nicolas">
+            <label for="nicolas">Nicolas</label>
+
+            <button type="reset">Supprimer</button>
+            <button type="submit" name="submit1">Envoyer</button>
+        </fieldset>
+    </form>
+
+    <!--Fin formulaire apprenants-->
+
+    <!--Formulaire autres apprenants-->
+
+    <form action="tirage.php" method="post" enctype="multipart/form-data">
+
+        <fieldset class="autreApprenants">
+            <legend>Prénom autres apprenants :</legend>
+
+            <label for="prenomApprenant1">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant1" placeholder="Pierre">
+            <label for="prenomApprenant2">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant2" placeholder="Paul">
+            <label for="prenomApprenant3">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant3" placeholder="Jacques">
+            <label for="prenomApprenant4">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant4" placeholder="Alexandre">
+            <br>
+            <label for="prenomApprenant5">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant5" placeholder="Louis">
+            <label for="prenomApprenant6">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant6" placeholder="Jacquie">
+            <label for="prenomApprenant7">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant7" placeholder="Michel">
+            <label for="prenomApprenant8">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant8" placeholder="Robert">
+            <br>
+            <label for="prenomApprenant9">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant9" placeholder="Louise">
+            <label for="prenomApprenant10">Prénom Apprenant</label>
+            <input type="text" name="apprenant[]" id="prenomApprenant10" placeholder="Ginnette">
+            <br>
+
+            <button type="reset">Supprimer</button>
+            <button type="submit" name="submit2">Envoyez</button>
+        </fieldset>
+    </form>
+
+    <!--Fin formulaire autres apprenants-->
+
+</body>
+</html>
